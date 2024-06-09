@@ -27,6 +27,8 @@ cask "figma"
 cask "github"
 # Client for the Google Drive storage service
 cask "google-drive"
+# Free and open-source media player
+cask "iina"
 # IDE for Java development - community edition
 cask "intellij-idea-ce"
 # Terminal emulator as alternative to Apple's Terminal app
@@ -43,6 +45,8 @@ cask "maccy"
 cask "mos"
 # Visual tool to design, develop and administer MySQL servers
 cask "mysqlworkbench"
+# Web browser
+cask "naver-whale"
 # App to write, plan, collaborate, and get organised
 cask "notion"
 # Knowledge base that works on top of a local folder of plain text Markdown files
