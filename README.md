@@ -1,5 +1,5 @@
-# brewfile
-Mac Brewfile && 맥 초기 세팅
+# mac_settings
+Mac Settings && Brewfile && .zshrc
 
 <br>
 
