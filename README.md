@@ -3,8 +3,7 @@ Mac Settings && Brewfile && .zshrc
 
 <br>
 
-
-## 맥북 초기 세팅 명령어 
+## 맥 초기 세팅 명령어 
 
 ```
 # 맥 독 최근 앱 개수
@@ -21,3 +20,19 @@ killall Dock
 defaults write com.apple.dock autohide -bool true && defaults write com.apple.dock autohide-delay -float 0 && defaults write com.apple.dock autohide-time-modifier -float 0.02 && killall Dock
 ```
 
+## Brewfile
+
+```
+# brewfile 생성
+# --describe 자동 주석
+brew bundle dump --describe
+
+# 지정된 이름으로 brewfile 생성
+brew bundle dump --describe --file='name'
+
+# brefile 설치
+brew bundle install
+
+# 특정 이름 brewfile 설치
+$ brew bundle install --file name
+```
