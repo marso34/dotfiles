@@ -1,4 +1,4 @@
-# mac_settings
+# dotfiles
 Mac Settings && Brewfile && .zshrc
 
 <br>
