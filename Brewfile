@@ -23,6 +23,9 @@ cask "android-studio"
 cask "discord"
 # Collaborative team software
 cask "figma"
+cask "font-d2coding"
+cask "font-ibm-plex-mono"
+cask "font-nanum-gothic-coding"
 # Desktop client for GitHub repositories
 cask "github"
 # Client for the Google Drive storage service
