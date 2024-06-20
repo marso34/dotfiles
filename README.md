@@ -17,6 +17,16 @@ killall Dock
 
 # 독 자동 가리기 속도
 defaults write com.apple.dock autohide -bool true && defaults write com.apple.dock autohide-delay -float 0 && defaults write com.apple.dock autohide-time-modifier -float 0.02 && killall Dock
+
+# 키보드 입력 속도
+defaults write -g ApplePressAndHoldEnabled -bool false
+defaults write -g InitialKeyRepeat -int 10
+defaults write -g KeyRepeat -int 1
+
+# 키보드 입력 속도 초기화
+defaults write -g ApplePressAndHoldEnabled -bool true
+defaults write -g InitialKeyRepeat -int 25
+defaults write -g KeyRepeat -int 6
 ```
 
 <br>
