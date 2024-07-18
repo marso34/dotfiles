@@ -5,7 +5,7 @@ Mac Settings && Brewfile && .zshrc
 
 ## 맥 초기 세팅 명령어 
 
-```
+```sh
 # 맥 독 최근 앱 개수
 defaults write com.apple.dock show-recents -bool true; defaults write com.apple.dock show-recent-count -int 5; killall Dock
 
@@ -32,10 +32,10 @@ defaults write -g KeyRepeat -int 6
 
 ## Brewfile
 
-```
+```sh
 # brewfile 생성
 # --describe 자동 주석
-ㅊ
+brew bundle dump --describe
 
 # 지정된 이름으로 brewfile 생성
 brew bundle dump --describe --file='name'

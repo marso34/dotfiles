@@ -44,6 +44,8 @@ cask "keka"
 cask "kekaexternalhelper"
 # Clipboard manager
 cask "maccy"
+# Tool to control external monitor brightness & volume
+cask "monitorcontrol"
 # Smooths scrolling and set mouse scroll directions independently
 cask "mos"
 # Visual tool to design, develop and administer MySQL servers
