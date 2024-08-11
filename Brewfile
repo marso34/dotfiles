@@ -64,6 +64,8 @@ cask "shottr"
 cask "slack"
 # System monitor for the menu bar
 cask "stats"
+# Video game digital distribution service
+cask "steam"
 # Open-source code editor
 cask "visual-studio-code"
 mas "Hidden Bar", id: 1452453066
