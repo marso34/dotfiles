@@ -8,8 +8,8 @@ brew "cask"
 brew "gh"
 # Mac App Store command-line interface
 brew "mas"
-# Open source relational database management system
-brew "mysql"
+# # Open source relational database management system
+# brew "mysql"
 # Manage multiple Node.js versions
 brew "nvm"
 # Development kit for the Java programming language
@@ -33,11 +33,12 @@ cask "discord"
 cask "docker"
 # Collaborative team software
 cask "figma"
+# Font
 cask "font-d2coding"
 cask "font-ibm-plex-mono"
 cask "font-nanum-gothic-coding"
-# Desktop client for GitHub repositories
-cask "github"
+# # Web browser
+# cask "google-chrome"
 # Client for the Google Drive storage service
 cask "google-drive"
 # Free and open-source media player

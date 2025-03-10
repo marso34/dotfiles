@@ -1,0 +1,58 @@
+[user]
+	name = LEE JUNE
+	email = mars102aq@gmail.com
+	# signingkey = ~/.ssh/ # 나중에 추가
+
+[core]
+	autocrlf = false
+	fsmonitor = true  
+	untrackedCache = true  
+	excludesfile = ~/.dotfiles/.config/git/.gitignore_global  # 전역 .gitignore
+
+[advice]
+	diverging = false
+	
+[column]  
+	ui = auto
+
+[color]
+    ui = true
+
+[commit]
+    # gpgsign = true
+    verbose = true
+
+[push]
+    atomic = true
+    autoSetupRemote = true
+    default = upstream
+    followTags = true
+
+[fetch]  
+	prune = true  
+	pruneTags = true  
+	all = true  
+
+[pull]
+	rebase = true
+
+[init]
+    defaultBranch = main
+
+[branch]
+    sort = -committerdate  # 최근 커밋 날짜 순으로 정렬
+
+[tag]  
+	sort = version:refname # 버전 순으로 정렬
+
+[diff]  
+	algorithm = histogram  
+	colorMoved = plain  
+	mnemonicPrefix = true  
+	renames = true 
+
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true

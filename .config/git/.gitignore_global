@@ -1,0 +1,22 @@
+# macOS
+._*
+.DS_Store
+.DS_Store?
+.AppleDouble
+.LSOverride
+
+# 로그 및 빌드 파일
+*.log
+*.out
+*.lock
+
+# IDE
+.vscode/
+.idea/
+*.iml
+
+# Node.js
+node_modules/
+
+# 기타
+.env
