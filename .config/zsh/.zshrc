@@ -8,6 +8,8 @@ export CONFIG="$DOTFILES/.config"
 export ZSH="$HOME/.oh-my-zsh"
 export ZSH_PLUGINS="$CONFIG/zsh/plugins"
 
+HIST_STAMPS="yyyy-mm-dd"
+
 ZSH_CUSTOM="$CONFIG/zsh"
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
