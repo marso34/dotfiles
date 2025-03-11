@@ -20,6 +20,6 @@ brew "openjdk@17"
 brew "python@3.12"
 
 # 환경별 Brewfile 불러오기
-require_relative "Brewfiles/Brewfile-cask"
-# require_relative "Brewfiles/Brewfile-mas"
-# require_relative "Brewfiles/Brewfile-personal"
+require_relative "Brewfiles/Brewfile.cask"
+# require_relative "Brewfiles/Brewfile.mas"
+# require_relative "Brewfiles/Brewfile.personal"
