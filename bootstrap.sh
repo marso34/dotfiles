@@ -66,9 +66,9 @@ make_symlinks() {
     # ln -sf ~/.dotfiles/.config/git/.gitconfig ~/.gitconfig
     # ln -sf ~/.dotfiles/.config/zsh/.zshenv ~/.zshenv
 
-    symlink_unless_present $DOTFILES_DIR/.config/gh/config.yml $DEST_DIR/.config/gh/config.yml
-    symlink_unless_present $DOTFILES_DIR/.config/git/.gitconfig $DEST_DIR/.gitconfig
-    symlink_unless_present $DOTFILES_DIR/.config/zsh/.zshenv $DEST_DIR/.zshenv
+    symlink_unless_present "$DOTFILES_DIR/.config/gh/config.yml" "$DEST_DIR/.config/gh/config.yml"
+    symlink_unless_present "$DOTFILES_DIR/.config/git/.gitconfig" "$DEST_DIR/.gitconfig"
+    symlink_unless_present "$DOTFILES_DIR/.config/zsh/.zshenv" "$DEST_DIR/.zshenv"
 }
 
 # 변수 설정
