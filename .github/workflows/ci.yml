@@ -15,16 +15,12 @@ jobs:
         with:
           submodules: recursive
           persist-credentials: false
-      # - name: Install packages
-      #   run: brew bundle install
-      #   continue-on-error: true
-      - name: List all files
+      - name: Install packages
+        run: brew bundle install
+        continue-on-error: true
+      - name: Bootstrap
         run: |
-          cd $GITHUB_WORKSPACE
-          ls -la
-      # - name: Bootstrap
-      #   run: |
-      #     if [ -f bootstrap.sh ]; then
-      #       chmod +x bootstrap.sh
-      #       ./bootstrap.sh
-      #     fi
+          if [ -f bootstrap.sh ]; then
+            chmod +x bootstrap.sh
+            ./bootstrap.sh
+          fi

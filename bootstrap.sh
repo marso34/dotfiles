@@ -3,7 +3,6 @@
 set -e
 
 main() {
-    tree
     make_symlinks
     ensure_has_rosetta
     ensure_has_homebrew
@@ -76,6 +75,10 @@ make_symlinks() {
 DOTFILES_DIR="${DOTFILES_DIR:-$(dirname "$0")}"
 DEST_DIR="${DEST_DIR:-$HOME}"
 BIN_DIR="${BIN_DIR:-$HOME/.local/bin}"
+
+echo "DOTFILES_DIR: $DOTFILES_DIR"
+echo "DEST_DIR: $DEST_DIR"
+ls -la "$DOTFILES_DIR/.config/gh/config.yml"
 
 # main 함수 실행
 main
