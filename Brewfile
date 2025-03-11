@@ -6,10 +6,10 @@ tap "homebrew/services"
 brew "cask"
 # GitHub command-line tool
 brew "gh"
+# Distributed revision control system
+brew "git"
 # Mac App Store command-line interface
 brew "mas"
-# # Open source relational database management system
-# brew "mysql"
 # Manage multiple Node.js versions
 brew "nvm"
 # Development kit for the Java programming language
@@ -37,8 +37,6 @@ cask "figma"
 cask "font-d2coding"
 cask "font-ibm-plex-mono"
 cask "font-nanum-gothic-coding"
-# # Web browser
-# cask "google-chrome"
 # Client for the Google Drive storage service
 cask "google-drive"
 # Free and open-source media player
