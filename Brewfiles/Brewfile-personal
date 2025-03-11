@@ -1,0 +1,8 @@
+# Voice and text chat software
+cask "discord"
+# Web browser
+cask "naver-whale"
+# Open-source software for live streaming and screen recording
+cask "obs"
+# Video game digital distribution service
+cask "steam"
