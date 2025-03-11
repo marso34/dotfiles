@@ -66,7 +66,7 @@ make_symlinks() {
     # ln -sf ~/.dotfiles/.config/git/.gitconfig ~/.gitconfig
     # ln -sf ~/.dotfiles/.config/zsh/.zshenv ~/.zshenv
 
-    symlink_unless_present "$DOTFILES_DIR/.config/gh/config.yml" "$DEST_DIR/.config/gh/config.yml"
+    # symlink_unless_present "$DOTFILES_DIR/.config/gh/config.yml" "$DEST_DIR/.config/gh/config.yml"
     symlink_unless_present "$DOTFILES_DIR/.config/git/.gitconfig" "$DEST_DIR/.gitconfig"
     symlink_unless_present "$DOTFILES_DIR/.config/zsh/.zshenv" "$DEST_DIR/.zshenv"
 }
@@ -75,10 +75,6 @@ make_symlinks() {
 DOTFILES_DIR="${DOTFILES_DIR:-$(dirname "$0")}"
 DEST_DIR="${DEST_DIR:-$HOME}"
 BIN_DIR="${BIN_DIR:-$HOME/.local/bin}"
-
-echo "DOTFILES_DIR: $DOTFILES_DIR"
-echo "DEST_DIR: $DEST_DIR"
-ls -la "$DOTFILES_DIR/.config/gh/config.yml"
 
 # main 함수 실행
 main
