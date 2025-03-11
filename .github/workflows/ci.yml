@@ -18,9 +18,11 @@ jobs:
       - name: Install packages
         run: brew bundle install
         continue-on-error: true
-      - name: Bootstrap
-        run: |
-          if [ -f bootstrap.sh ]; then
-            chmod +x bootstrap.sh
-            ./bootstrap.sh
-          fi
+      - name: List all files
+        run: ls -la
+      # - name: Bootstrap
+      #   run: |
+      #     if [ -f bootstrap.sh ]; then
+      #       chmod +x bootstrap.sh
+      #       ./bootstrap.sh
+      #     fi
