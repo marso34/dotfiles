@@ -3,12 +3,10 @@
 set -e
 
 main() {
+    make_symlinks
     ensure_has_rosetta
     ensure_has_homebrew
     ensure_has_oh_my_zsh
-    make_symlinks
-
-    
 }
 
 # 명령어가 시스템에 존재하는지 확인
