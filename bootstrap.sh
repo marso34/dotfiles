@@ -3,6 +3,7 @@
 set -e
 
 main() {
+    tree
     make_symlinks
     ensure_has_rosetta
     ensure_has_homebrew

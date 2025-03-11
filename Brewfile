@@ -18,8 +18,10 @@ brew "openjdk@11"
 brew "openjdk@17"
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.12"
+# Display directories as trees (with optional color/HTML output)
+brew "tree"
 
 # 환경별 Brewfile 불러오기
-eval(File.read(File.expand_path("Brewfiles/Brewfile.cask")))
-# eval(File.read(File.expand_path("Brewfiles/Brewfile.mas")))
+# eval(File.read(File.expand_path("Brewfiles/Brewfile.cask")))
+eval(File.read(File.expand_path("Brewfiles/Brewfile.mas")))
 # eval(File.read(File.expand_path("Brewfiles/Brewfile.personal")))
