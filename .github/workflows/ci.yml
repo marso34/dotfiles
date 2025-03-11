@@ -15,9 +15,9 @@ jobs:
         with:
           submodules: recursive
           persist-credentials: false
-      - name: Install packages
-        run: brew bundle install
-        continue-on-error: true
+      # - name: Install packages
+      #   run: brew bundle install
+      #   continue-on-error: true
       - name: List all files
         run: ls -la
       # - name: Bootstrap
