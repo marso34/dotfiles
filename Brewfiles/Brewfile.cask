@@ -32,14 +32,30 @@ cask "keka"
 cask "kekaexternalhelper"
 # Clipboard manager
 cask "maccy"
+# Menu bar browser
+cask "menubarx"
+# Provides updates to various Microsoft products
+cask "microsoft-auto-update"
+# Spreadsheet software
+cask "microsoft-excel"
+# Presentation software
+cask "microsoft-powerpoint"
+# Word processor
+cask "microsoft-word"
+# # Interactive tool for analyzing MongoDB data
+# cask "mongodb-compass"
 # Tool to control external monitor brightness & volume
 cask "monitorcontrol"
 # Smooths scrolling and set mouse scroll directions independently
 cask "mos"
+# Web browser
+cask "naver-whale"
 # App to write, plan, collaborate, and get organised
 cask "notion"
 # Knowledge base that works on top of a local folder of plain text Markdown files
 cask "obsidian"
+# Cloud storage client
+cask "onedrive"
 # Move and resize windows using keyboard shortcuts or snap areas
 cask "rectangle"
 # Screenshot measurement and annotation tool
