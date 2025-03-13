@@ -23,6 +23,10 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
 [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 
-export JAVA_HOME=/opt/homebrew/opt/openjdk@17
+# OpenJDK
+export JAVA_HOME="$(brew --prefix openjdk@17)"
 export PATH="$JAVA_HOME/bin:$PATH"
 export CPPFLAGS="-I/opt/homebrew/opt/openjdk@17/include"
+
+# OpenSSH
+export PATH="$(brew --prefix openssh)/bin:$PATH"

@@ -1,7 +1,7 @@
 [user]
 	name = LEE JUNE
 	email = mars102aq@gmail.com
-	# signingkey = ~/.ssh/ # 나중에 추가
+	signingkey = ~/.ssh/id_ed25519
 
 [core]
 	autocrlf = false
@@ -19,7 +19,7 @@
     ui = true
 
 [commit]
-    # gpgsign = true
+    gpgsign = true
     verbose = true
 
 [push]
@@ -50,6 +50,9 @@
 	colorMoved = plain  
 	mnemonicPrefix = true  
 	renames = true 
+
+[gpg]
+    format = ssh
 
 [filter "lfs"]
 	clean = git-lfs clean -- %f

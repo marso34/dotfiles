@@ -16,6 +16,8 @@ brew "nvm"
 brew "openjdk@11"
 # Development kit for the Java programming language
 brew "openjdk@17"
+# OpenBSD freely-licensed SSH connectivity tools
+brew "openssh"
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.12"
 # Display directories as trees (with optional color/HTML output)
