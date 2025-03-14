@@ -22,6 +22,8 @@ brew "openssh"
 brew "python@3.12"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
+# Sends magic packets to wake up network-devices
+brew "wakeonlan"
 
 # 환경별 Brewfile 불러오기
 # eval(File.read(File.expand_path("Brewfiles/Brewfile.cask")))
