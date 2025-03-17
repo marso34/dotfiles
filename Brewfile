@@ -12,10 +12,6 @@ brew "git"
 brew "mas"
 # Manage multiple Node.js versions
 brew "nvm"
-# Development kit for the Java programming language
-brew "openjdk@11"
-# Development kit for the Java programming language
-brew "openjdk@17"
 # OpenBSD freely-licensed SSH connectivity tools
 brew "openssh"
 # Interpreted, interactive, object-oriented programming language

@@ -3,9 +3,16 @@
 set -e
 
 main() {
+    # 필수 프로그램 설치
     ensure_has_rosetta
     ensure_has_homebrew
     ensure_has_oh_my_zsh
+    ensure_has_sdkman
+
+    # Brewfile 설치
+    install_brewfile
+
+    # 심볼릭 링크 생성
     make_symlinks
 }
 
@@ -14,18 +21,12 @@ bin_exists() {
     command -v $1 >/dev/null 2>&1
 }
 
-# Homebrew 설치
-ensure_has_homebrew() {
-    printf '📦 Checking for homebrew... '
-    bin_exists brew && printf 'found\n' || {
+# SDKMAN! 설치
+ensure_has_sdkman() {
+    printf '☕ Checking for SDKMAN! ... '
+    [[ -d "$HOME/.sdkman" ]] && printf 'found\n' || {
         printf 'installing\n'
-        /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-
-        echo "🔄 Update..."
-        brew update
-
-        echo "📦 Brewfile installation..."
-        brew bundle install
+        curl -s "https://get.sdkman.io" | bash
     }
 }
 
@@ -38,6 +39,15 @@ ensure_has_rosetta() {
     }
 }
 
+# Homebrew 설치
+ensure_has_homebrew() {
+    printf '📦 Checking for homebrew... '
+    bin_exists brew && printf 'found\n' || {
+        printf 'installing\n'
+        /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    }
+}
+
 # Oh My Zsh 설치
 ensure_has_oh_my_zsh() {
     printf '💻 Checking for Oh My Zsh... '
@@ -45,6 +55,15 @@ ensure_has_oh_my_zsh() {
         printf 'installing\n'
         sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
     }
+}
+
+# Brewfile 설치
+install_brewfile() {
+    echo "🔄 Update..."
+    brew update
+
+    echo "📦 Brewfile installation..."
+    brew bundle install
 }
 
 # 심볼릭 링크를 생성하는 함수 (이미 존재하면 무시)
