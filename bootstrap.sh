@@ -71,12 +71,8 @@ symlink_unless_present() {
     src="$1"
     dest="$2"
 
-    if [ ! -e "$dest" ]; then
-        ln -sf "$src" "$dest"
-        echo "Linked -sf $src to $dest"
-    else
-        echo "$dest already exists! Skipping..."
-    fi
+    ln -sf "$src" "$dest"
+    echo "Linked -sf $src to $dest"
 }
 
 # 심볼릭 링크를 만드는 함수, 나중에 자동화
