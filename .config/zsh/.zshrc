@@ -2,11 +2,9 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-# Path : Dotfiles, oh-my-zsh, pluggins
-export DOTFILES=$HOME/.dotfiles
-export CONFIG="$DOTFILES/.config"
+# Path : config, oh-my-zsh, pluggins
+export CONFIG="$HOME/.dotfiles/.config"
 export ZSH="$HOME/.oh-my-zsh"
-export ZSH_PLUGINS="$CONFIG/zsh/plugins"
 
 HIST_STAMPS="yyyy-mm-dd"
 
