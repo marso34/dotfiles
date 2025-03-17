@@ -1,0 +1,163 @@
+#!/bin/bash
+
+osascript -e 'tell application "System Preferences" to quit'
+
+sudo -v
+
+###############################################################################
+# General UI/UX                                                               #
+###############################################################################
+
+# 컴퓨터 이름, 호스트 이름, 로컬 호스트 이름을 설정
+sudo scutil --set ComputerName "thought"
+sudo scutil --set HostName "thought"
+sudo scutil --set LocalHostName "thought"
+sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "thought"
+
+# 배터리 사용시에만 저전력 모드
+sudo pmset -b reducespeed 1
+
+# 스크롤 막대 항상 보이게
+defaults writeㄴ NSGlobalDomain AppleShowScrollBars -string "Always"
+# Possible values: `WhenScrolling`, `Automatic` and `Always`
+
+# 핫코너
+defaults write com.apple.dock wvous-tl-corner -int 5  # 왼쪽 상단: 화면 보호기 시작
+defaults write com.apple.dock wvous-tr-corner -int 12 # 오른쪽 상단: 알림 센터
+defaults write com.apple.dock wvous-bl-corner -int 13 # 왼쪽 하단: 잠금 화면
+defaults write com.apple.dock wvous-br-corner -int 14 # 오른쪽 하단: 빠른 메모
+
+# 핫코너 Command 키를 같이 눌러야 활성화
+defaults write com.apple.dock wvous-tl-modifier -int 1048576
+defaults write com.apple.dock wvous-tr-modifier -int 1048576
+defaults write com.apple.dock wvous-bl-modifier -int 1048576
+defaults write com.apple.dock wvous-br-modifier -int 1048576
+
+# 제어센터
+# defaults write com.apple.controlcenter.plist WiFi -bool true        # Wi-Fi
+# defaults write com.apple.controlcenter.plist Bluetooth -bool false  # 블루투스
+# defaults write com.apple.controlcenter.plist AirDrop -bool false    # 에어드랍
+# defaults write com.apple.controlcenter.plist AirPlay -bool false    # 에어플레이
+# defaults write com.apple.controlcenter.plist Sound -bool false      # 소리
+# defaults write com.apple.controlcenter.plist NowPlaying -bool false # 노래
+
+###############################################################################
+# Dock                                                                        #
+###############################################################################
+
+# Dock 위치
+defaults write com.apple.dock orientation -string "bottom"
+# Dock 아이콘 크기
+defaults write com.apple.dock tilesize -int 56
+
+# Dock 자동 숨김 & 속도
+defaults write com.apple.dock autohide -bool true
+defaults write com.apple.dock autohide-delay -float 0
+defaults write com.apple.dock autohide-time-modifier -float 0.02
+
+# 애플리케이션 최소화 효과
+defaults write com.apple.dock mineffect -string "genie"
+# 아이콘으로 최소화
+defaults write com.apple.dock minimize-to-application -bool true
+# Dock에 최소화된 윈도우를 표시
+defaults write com.apple.dock showhidden -bool true
+# Dock에 실행중인 앱 표시
+defaults write com.apple.dock show-process-indicators -bool true
+
+# Dock 최근 앱 개수
+defaults write com.apple.dock show-recents -bool true  
+defaults write com.apple.dock show-recent-count -int 5
+
+###############################################################################
+# Launchpad                                                                   #
+###############################################################################
+
+# 런치패드 아이콘 크기 조절
+defaults write com.apple.dock springboard-columns -int 8
+defaults write com.apple.dock springboard-rows -int 5
+
+###############################################################################
+# Trackpad, mouse, keyboard, Bluetooth accessories, and input                 #
+###############################################################################
+
+# Trackpad
+# 탭하여 클릭 활성화
+defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
+defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
+defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
+
+# 오른쪽 클릭 : 두 손가락 클릭 or 두 손가락 탭
+defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadRightClick -bool true
+defaults -currentHost write NSGlobalDomain com.apple.trackpad.enableSecondaryClick -bool true
+
+# 자연 스러운 스크롤
+defaults write NSGlobalDomain com.apple.swipescrolldirection -bool true
+
+# 키 반복 속도 증가
+defaults write -g ApplePressAndHoldEnabled -bool false
+defaults write -g KeyRepeat -int 1
+defaults write -g InitialKeyRepeat -int 10
+
+###############################################################################
+# Finder                                                                      #
+###############################################################################
+
+# 상태 표시줄 활성화
+defaults write com.apple.finder ShowStatusBar -bool true
+# 경로 표시줄 활성화
+defaults write com.apple.finder ShowPathbar -bool true
+# 폴더를 먼저 정렬
+defaults write com.apple.finder _FXSortFoldersFirst -bool true
+
+# 확장자 항상 보이기
+defaults write NSGlobalDomain AppleShowAllExtensions -bool true
+
+# 아이콘을 그리드 정렬로 설정 (icon views)
+/usr/libexec/PlistBuddy -c "Set :DesktopViewSettings:IconViewSettings:arrangeBy grid" ~/Library/Preferences/com.apple.finder.plist
+
+# 네트워크와 USB 드라이브에서 숨겨진 '.DS_Store' 파일 생성을 비활성화하여 깨끗한 시스템 유지
+defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
+defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true
+
+# .dmg 파일을 열 때 경고 표시하지 않음
+defaults write com.apple.frameworks.diskimages skip-verify -bool true
+defaults write com.apple.frameworks.diskimages skip-verify-locked -bool true
+defaults write com.apple.frameworks.diskimages skip-verify-remote -bool true
+
+# 기본 Finder 뷰를 리스트로 설정 (options: icnv:, clmv, glyv, Nlsv)
+defaults write com.apple.finder FXPreferredViewStyle -string "Nlsv"
+
+# chflags nohidden ~/Library && xattr -d com.apple.FinderInfo ~/Library
+
+###############################################################################
+# Screen                                                                      #
+###############################################################################
+
+# 화면 보호기에서 비밀번호 요청을 활성화, 지연 없이 바로 비밀번호를 입력
+defaults write com.apple.screensaver askForPassword -int 1
+defaults write com.apple.screensaver askForPasswordDelay -int 0
+
+# 화면 보호기 시작 10분
+defaults write com.apple.screensaver idleTime -int 600
+# 디스플레이 끄기 시간 15분
+sudo pmset -a displaysleep 15
+
+# 스크린샷 저장 위치
+defaults write com.apple.screencapture location -string "${HOME}/Pictures/Captures"
+# 스크린샷 포맷을 PNG로 설정 (options: BMP, GIF, JPG, PNG, PDF, TIFF)
+defaults write com.apple.screencapture type -string "png"
+# 스크린샷 그림자 제거
+defaults write com.apple.screencapture disable-shadow -bool true
+
+# HiDPI 모드 활성화 (재시작 필요)
+sudo defaults write /Library/Preferences/com.apple.windowserver DisplayResolutionEnabled -bool true
+
+###############################################################################
+
+# 변경 사항 적용
+killall ControlCenter
+killall SystemUIServer
+killall Dock
+killall Finder
+
+echo "✅ macOS 설정 완료!"
