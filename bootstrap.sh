@@ -3,10 +3,10 @@
 set -e
 
 main() {
-    make_symlinks
     ensure_has_rosetta
     ensure_has_homebrew
     ensure_has_oh_my_zsh
+    make_symlinks
 }
 
 # 명령어가 시스템에 존재하는지 확인
@@ -66,9 +66,43 @@ make_symlinks() {
     # ln -sf ~/.dotfiles/.config/git/.gitconfig ~/.gitconfig
     # ln -sf ~/.dotfiles/.config/zsh/.zshenv ~/.zshenv
 
-    # symlink_unless_present "$DOTFILES_DIR/.config/gh/config.yml" "$DEST_DIR/.config/gh/config.yml"
+    symlink_unless_present "$DOTFILES_DIR/.config/gh/config.yml" "$DEST_DIR/.config/gh/config.yml"
     symlink_unless_present "$DOTFILES_DIR/.config/git/.gitconfig" "$DEST_DIR/.gitconfig"
     symlink_unless_present "$DOTFILES_DIR/.config/zsh/.zshenv" "$DEST_DIR/.zshenv"
+}
+
+# 참고
+make_symlinks2() {
+    # ignored=("".config ".local" ".git" ".gitignore" ".gitmodules")
+
+    # .dotfiles 디렉토리에서 각 파일을 반복하며 심볼릭 링크를 생성
+    # for dotfile in "$DOTFILES_DIR"/*; do
+    #     filename=$(basename "$dotfile")
+    #     if [[ " ${ignored[@]} " =~ " $filename " ]]; then
+    #         continue
+    #     fi
+    #     dest="$DEST_DIR/$filename"
+    #     symlink_unless_present "$dotfile" "$dest"
+    # done
+
+    # .config, .local, .local/share 디렉토리 처리
+    # for each in ".config" ".local" ".local/share"; do
+    #     dotfile_dir="$DOTFILES_DIR/$each"
+    #     dest_dir="$DEST_DIR/$each"
+    #     if [ ! -e "$dest_dir" ]; then
+    #         ln -s "$dotfile_dir" "$dest_dir"
+    #         echo "Linked $dotfile_dir to $dest_dir"
+    #     else
+    #         # 이미 존재하는 경우, 각 파일을 개별적으로 처리
+    #         for dotfile in "$dotfile_dir"/*; do
+    #             symlink_unless_present "$dotfile" "$dest_dir/$(basename "$dotfile")"
+    #         done
+    #     fi
+    # done
+
+    # bin 디렉토리 처리 (현재는 비어 있음)
+    mkdir -p "$BIN_DIR"
+    # 추가적인 바이너리 파일을 symlink하려면 이곳에 구현
 }
 
 # 변수 설정
