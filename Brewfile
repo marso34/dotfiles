@@ -4,6 +4,8 @@ tap "homebrew/services"
 
 # Emacs dependency management
 brew "cask"
+# Play, record, convert, and stream audio and video
+brew "ffmpeg"
 # GitHub command-line tool
 brew "gh"
 # Distributed revision control system
@@ -20,6 +22,8 @@ brew "python@3.12"
 brew "tree"
 # Sends magic packets to wake up network-devices
 brew "wakeonlan"
+# Feature-rich command-line audio/video downloader
+brew "yt-dlp"
 
 # 환경별 Brewfile 불러오기
 # eval(File.read(File.expand_path("Brewfiles/Brewfile.cask")))
