@@ -6,8 +6,6 @@ Mac Settings
 ## Install 
 
 ```sh
-# mkdir ~/Documents/dev
-
 git clone --recursive https://github.com/marso34/dotfiles ~/.dotfiles
 cd ~/.dotfiles
 
