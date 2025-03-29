@@ -6,8 +6,6 @@ cask "aldente"
 cask "bruno"
 # Universal database tool and SQL client
 cask "dbeaver-community"
-# All-in-one toolbox for developers
-# cask "devutils"
 # App to build and share containerised applications and microservices
 cask "docker"
 # Collaborative team software
@@ -47,7 +45,7 @@ cask "monitorcontrol"
 # Smooths scrolling and set mouse scroll directions independently
 cask "mos"
 # Web browser
-cask "naver-whale"
+# cask "naver-whale"
 # App to write, plan, collaborate, and get organised
 cask "notion"
 # Knowledge base that works on top of a local folder of plain text Markdown files

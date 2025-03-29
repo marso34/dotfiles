@@ -15,9 +15,6 @@ jobs:
         with:
           submodules: recursive
           persist-credentials: false
-      - name: Install packages
-        run: brew bundle install
-        continue-on-error: true
       - name: Bootstrap
         run: |
           if [ -f bootstrap.sh ]; then

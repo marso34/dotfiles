@@ -2,6 +2,8 @@
 cask "google-drive"
 # Voice and text chat software
 cask "discord"
+# Korean e-book store
+cask "millie"
 # Open-source software for live streaming and screen recording
 cask "obs"
 # Cloud storage client
