@@ -16,14 +16,12 @@ cask "figma"
 cask "font-d2coding"
 cask "font-ibm-plex-mono"
 cask "font-nanum-gothic-coding"
-# Client for the Google Drive storage service
-cask "google-drive"
 # Free and open-source media player
 cask "iina"
 # Java IDE by JetBrains
 cask "intellij-idea"
 # IDE for Java development - community edition
-cask "intellij-idea-ce"
+# cask "intellij-idea-ce"
 # Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2"
 # Keyboard customiser
@@ -54,8 +52,6 @@ cask "naver-whale"
 cask "notion"
 # Knowledge base that works on top of a local folder of plain text Markdown files
 cask "obsidian"
-# Cloud storage client
-cask "onedrive"
 # Control your tools with a few keystrokes
 cask "raycast"
 # Move and resize windows using keyboard shortcuts or snap areas

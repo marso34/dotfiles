@@ -22,6 +22,6 @@ brew "wakeonlan"
 brew "yt-dlp"
 
 # 환경별 Brewfile 불러오기
-# eval(File.read(File.expand_path("Brewfiles/Brewfile.cask")))
+eval(File.read(File.expand_path("Brewfiles/Brewfile.cask")))
 # eval(File.read(File.expand_path("Brewfiles/Brewfile.mas")))
 # eval(File.read(File.expand_path("Brewfiles/Brewfile.personal")))

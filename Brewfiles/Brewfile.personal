@@ -1,6 +1,10 @@
+# Client for the Google Drive storage service
+cask "google-drive"
 # Voice and text chat software
 cask "discord"
 # Open-source software for live streaming and screen recording
 cask "obs"
+# Cloud storage client
+cask "onedrive"
 # Video game digital distribution service
 cask "steam"
