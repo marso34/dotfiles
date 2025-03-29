@@ -1,7 +1,3 @@
-tap "adoptopenjdk/openjdk"
-tap "homebrew/bundle"
-tap "homebrew/services"
-
 # Emacs dependency management
 brew "cask"
 # Play, record, convert, and stream audio and video
