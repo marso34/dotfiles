@@ -1,22 +1,22 @@
 [user]
-	name = LEE JUNE
-	email = mars102aq@gmail.com
-	signingkey = ~/.ssh/id_ed25519
+    name = LEE JUNE
+    email = mars102aq@gmail.com
+    signingkey = ~/.ssh/id_ed25519
 
 [includeIf "gitdir:~/Document/Dev/personal/"]
-  path = ~/.dotfiles/.config/git/.gitconfig-personal
+    path = ~/.dotfiles/.config/git/.gitconfig-personal
 
 [core]
-	autocrlf = false
-	fsmonitor = true  
-	untrackedCache = true  
-	excludesfile = ~/.dotfiles/.config/git/.gitignore_global  # 전역 .gitignore
+    autocrlf = false
+    fsmonitor = true  
+    untrackedCache = true  
+    excludesfile = ~/.dotfiles/.config/git/.gitignore_global  # 전역 .gitignore
 
 [advice]
-	diverging = false
-	
+    diverging = false
+    
 [column]  
-	ui = auto
+    ui = auto
 
 [color]
     ui = true
@@ -32,12 +32,12 @@
     followTags = true
 
 [fetch]  
-	prune = true  
-	pruneTags = true  
-	all = true  
+    prune = true  
+    pruneTags = true  
+    all = true  
 
 [pull]
-	rebase = true
+    rebase = true
 
 [init]
     defaultBranch = main
@@ -46,19 +46,19 @@
     sort = -committerdate  # 최근 커밋 날짜 순으로 정렬
 
 [tag]  
-	sort = version:refname # 버전 순으로 정렬
+    sort = version:refname # 버전 순으로 정렬
 
 [diff]  
-	algorithm = histogram  
-	colorMoved = plain  
-	mnemonicPrefix = true  
-	renames = true 
+    algorithm = histogram  
+    colorMoved = plain  
+    mnemonicPrefix = true  
+    renames = true 
 
 [gpg]
     format = ssh
 
 [filter "lfs"]
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
-	process = git-lfs filter-process
-	required = true
+    clean = git-lfs clean -- %f
+    smudge = git-lfs smudge -- %f
+    process = git-lfs filter-process
+    required = true
