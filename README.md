@@ -6,7 +6,7 @@ Mac Settings
 ## Install 
 
 ```sh
-git clone --recursive https://github.com/marso34/dotfiles ~/.dotfiles
+git clone --recursive https://github.com/marso34/dotfiles.git ~/.dotfiles
 cd ~/.dotfiles
 
 chmod +x bootstrap.sh

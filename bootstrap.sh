@@ -6,7 +6,7 @@ main() {
     # 디렉터리 생성
     ensure_dir
 
-    # # 필수 프로그램 설치
+    # 필수 프로그램 설치
     ensure_has_rosetta
     ensure_has_homebrew
     ensure_has_oh_my_zsh
@@ -39,7 +39,6 @@ ensure_dir() {
 }
 
 # clone git repository (obsidian)
-# 이름 추천
 clone_git_repo() {
     # 클론할 리포지토리 URL
     REPO_URL="https://github.com/사용자명/리포지토리명.git"
