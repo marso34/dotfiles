@@ -1,11 +1,9 @@
 # Menu bar tool to limit maximum charging percentage
 cask "aldente"
-# # Tools for building Android applications
-# cask "android-studio"
 # Opensource IDE for exploring and testing api's
 cask "bruno"
-# Universal database tool and SQL client
-cask "dbeaver-community"
+# Databases and SQL IDE
+cask "datagrip"
 # App to build and share containerised applications and microservices
 cask "docker"
 # Collaborative team software
@@ -13,6 +11,7 @@ cask "figma"
 # Fonts
 cask "font-d2coding"
 cask "font-ibm-plex-mono"
+cask "font-jetbrains-mono"
 cask "font-nanum-gothic-coding"
 # Free and open-source media player
 cask "iina"
@@ -38,8 +37,6 @@ cask "microsoft-excel"
 cask "microsoft-powerpoint"
 # Word processor
 cask "microsoft-word"
-# # Interactive tool for analyzing MongoDB data
-cask "mongodb-compass"
 # Tool to control external monitor brightness & volume
 cask "monitorcontrol"
 # Smooths scrolling and set mouse scroll directions independently
