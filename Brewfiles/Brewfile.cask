@@ -1,7 +1,11 @@
 # Menu bar tool to limit maximum charging percentage
 cask "aldente"
+# Tools for building Android applications
+# cask "android-studio"
 # Opensource IDE for exploring and testing api's
 cask "bruno"
+# Write, edit, and chat about your code with AI
+cask "cursor"
 # Databases and SQL IDE
 cask "datagrip"
 # App to build and share containerised applications and microservices
