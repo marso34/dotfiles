@@ -1,7 +1,13 @@
-# Client for the Google Drive storage service
-cask "google-drive"
+# OpenAI's official ChatGPT desktop app
+cask "chatgpt"
+# AI-powered translator
+cask "deepl"
 # Voice and text chat software
 cask "discord"
+# Client for the Google Drive storage service
+cask "google-drive"
+# Menu bar browser
+cask "menubarx"
 # Korean e-book store
 cask "millie"
 # Open-source software for live streaming and screen recording

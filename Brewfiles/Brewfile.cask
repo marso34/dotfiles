@@ -5,11 +5,11 @@ cask "aldente"
 # Opensource IDE for exploring and testing api's
 cask "bruno"
 # Write, edit, and chat about your code with AI
-cask "cursor"
+# cask "cursor"
 # Databases and SQL IDE
 cask "datagrip"
 # App to build and share containerised applications and microservices
-cask "docker"
+cask "docker-desktop"
 # Collaborative team software
 cask "figma"
 # Fonts
@@ -31,8 +31,6 @@ cask "karabiner-elements"
 cask "keka"
 # Helper application for the Keka file archiver
 cask "kekaexternalhelper"
-# Menu bar browser
-cask "menubarx"
 # Provides updates to various Microsoft products
 cask "microsoft-auto-update"
 # Spreadsheet software
@@ -43,8 +41,6 @@ cask "microsoft-powerpoint"
 cask "microsoft-word"
 # Tool to control external monitor brightness & volume
 cask "monitorcontrol"
-# Smooths scrolling and set mouse scroll directions independently
-cask "mos"
 # Web browser
 # cask "naver-whale"
 # Reverse proxy, secure introspectable tunnels to localhost
