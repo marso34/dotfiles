@@ -1,0 +1,9 @@
+{
+    "autoInstall": "1",
+    "hideIntro": "1",
+    "analyticsConsent": "0",
+    "docs": "bash/docker/git/homebrew/http/kotlin~1.9/kotlin~1.8/kubernetes/nginx/node/openjdk~8/openjdk~21/openjdk~17/openjdk~11/postgresql~14/react/react_bootstrap/react_native/react_router/redis/spring_boot",
+    "hideDisabled": "1",
+    "tips": "KeyNav",
+    "arrowScroll": "1"
+}
