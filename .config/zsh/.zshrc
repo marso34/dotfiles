@@ -20,8 +20,8 @@ export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 
 # Android SDK
-export ANDROID_HOME="$HOME/Library/Android/Sdk"
-export PATH="$ANDROID_HOME/emulator:$ANDROID_HOME/platform-tools:$PATH"
+# export ANDROID_HOME="$HOME/Library/Android/Sdk"
+# export PATH="$ANDROID_HOME/emulator:$ANDROID_HOME/platform-tools:$PATH"
 
 # Docker Desktop
 fpath=(/Users/thought/.docker/completions $fpath)
