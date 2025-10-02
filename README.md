@@ -10,7 +10,9 @@ git clone --recursive https://github.com/marso34/dotfiles.git ~/.dotfiles
 cd ~/.dotfiles
 
 chmod +x bootstrap.sh
+chmod +x .macos
 ./bootstrap.sh
+./.macos
 ```
 
 ## Brewfile

@@ -19,5 +19,7 @@ jobs:
         run: |
           if [ -f bootstrap.sh ]; then
             chmod +x bootstrap.sh
+            chmod +x .macos
             ./bootstrap.sh
+            ./.macos
           fi
