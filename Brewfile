@@ -1,5 +1,11 @@
+tap "adoptopenjdk/openjdk"
+tap "homebrew/bundle"
+tap "homebrew/services"
+tap "peterldowns/tap"
 # Emacs dependency management
 brew "cask"
+# Dependency manager for Cocoa projects
+brew "cocoapods"
 # Play, record, convert, and stream audio and video
 brew "ffmpeg"
 # GitHub command-line tool
@@ -20,6 +26,8 @@ brew "tree"
 brew "wakeonlan"
 # Feature-rich command-line audio/video downloader
 brew "yt-dlp"
+# Localias is a tool for developers to securely manage local aliases for development servers.
+brew "peterldowns/tap/localias"
 
 # 환경별 Brewfile 불러오기
 eval(File.read(File.expand_path("Brewfiles/Brewfile.cask")))

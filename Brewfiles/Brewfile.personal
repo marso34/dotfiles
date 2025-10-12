@@ -1,5 +1,5 @@
-# OpenAI's official ChatGPT desktop app
-cask "chatgpt"
+# Multi-track audio editor and recorder
+cask "audacity"
 # AI-powered translator
 cask "deepl"
 # Voice and text chat software
