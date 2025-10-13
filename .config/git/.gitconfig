@@ -6,6 +6,9 @@
 [includeIf "gitdir:~/Document/Dev/personal/"]
     path = ~/.dotfiles/.config/git/.gitconfig-personal
 
+[includeIf "gitdir:~/Document/Dev/company/"]
+    path = ~/.dotfiles/.config/git/.gitconfig-company
+
 [core]
     autocrlf = false
     fsmonitor = true  
