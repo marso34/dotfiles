@@ -134,14 +134,14 @@ defaults write com.apple.finder FinderSpawnTab -bool false
 # 검색 시 현재 폴더만 검색
 defaults write com.apple.finder FXDefaultSearchScope -string SCcf
 # 30일 후 자동으로 휴지통 비우기
-defaults write com.apple.finder FXRemoveOldTrashItems -bool trueㄴ
+defaults write com.apple.finder FXRemoveOldTrashItems -bool true
 # 새 문서를 iCloud Drive가 아닌 로컬에 저장
 defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool false
 
 # 아이콘을 그리드 정렬로 설정 (icon views)
 /usr/libexec/PlistBuddy -c "Set :DesktopViewSettings:IconViewSettings:arrangeBy grid" ~/Library/Preferences/com.apple.finder.plist
 
-# 네트워크와 USB 드라이브에서 숨겨진 '.DS_Store' 파일 생성을 비활성화하여 깨끗한 시스템 유지
+# 네트워크와 USB 드라이브에서 숨겨진 '.DS_Store' 파일 생성을 비활성화
 defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true
 
