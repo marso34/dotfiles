@@ -12,6 +12,8 @@
 	<true/>
 	<key>Battery_battery_color</key>
 	<false/>
+	<key>Battery_battery_hideAdditionalWhenFull</key>
+	<true/>
 	<key>Battery_battery_position</key>
 	<integer>0</integer>
 	<key>Battery_battery_xlSize</key>
@@ -22,8 +24,10 @@
 	<integer>2</integer>
 	<key>Battery_mini_position</key>
 	<integer>4</integer>
+	<key>Battery_notifications_high</key>
+	<string></string>
 	<key>Battery_notifications_low</key>
-	<string>0.2</string>
+	<string>low</string>
 	<key>Battery_state</key>
 	<true/>
 	<key>Battery_widget</key>
@@ -35,25 +39,29 @@
 	<key>Clock_state</key>
 	<false/>
 	<key>Disk_barChart_position</key>
-	<integer>4</integer>
+	<integer>5</integer>
 	<key>Disk_label_position</key>
-	<integer>1</integer>
-	<key>Disk_memory_position</key>
-	<integer>0</integer>
-	<key>Disk_mini_position</key>
 	<integer>3</integer>
+	<key>Disk_memory_position</key>
+	<integer>2</integer>
+	<key>Disk_mini_position</key>
+	<integer>0</integer>
 	<key>Disk_networkChart_position</key>
-	<integer>6</integer>
+	<integer>7</integer>
 	<key>Disk_notifications_utilization_state</key>
 	<false/>
 	<key>Disk_pieChart_position</key>
-	<integer>5</integer>
+	<integer>6</integer>
+	<key>Disk_removable</key>
+	<true/>
 	<key>Disk_speed_position</key>
-	<integer>2</integer>
+	<integer>1</integer>
 	<key>Disk_state</key>
 	<false/>
+	<key>Disk_text_position</key>
+	<integer>4</integer>
 	<key>Disk_widget</key>
-	<string>memory,label</string>
+	<string></string>
 	<key>GPU_barChart_position</key>
 	<integer>3</integer>
 	<key>GPU_label_position</key>
@@ -70,41 +78,40 @@
 	<string></string>
 	<key>LaunchAtLoginNext</key>
 	<true/>
-	<key>NSNavPanelExpandedSizeForSaveMode</key>
+	<key>NSNavPanelExpandedSizeForOpenMode</key>
 	<string>{800, 448}</string>
+	<key>NSNavPanelExpandedSizeForSaveMode</key>
+	<string>{815, 448}</string>
 	<key>NSNavPanelExpandedStateForSaveMode</key>
 	<true/>
 	<key>NSOSPLastRootDirectory</key>
 	<data>
-	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
+	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
+	IvAAANwBAAAAAAAA
 	</data>
 	<key>NSStatusItem Preferred Position Battery_battery</key>
-	<real>135</real>
+	<real>143</real>
 	<key>NSStatusItem Preferred Position CPU_mini</key>
-	<real>506</real>
+	<real>501</real>
 	<key>NSStatusItem Preferred Position RAM_mini</key>
-	<real>459</real>
+	<real>454</real>
 	<key>NSStatusItem Preferred Position Sensors_sensors</key>
-	<real>553</real>
+	<real>548</real>
 	<key>NSStatusItem Restore Position Clock_sensors</key>
 	<integer>667</integer>
 	<key>NSStatusItem Restore Position Disk_label</key>
@@ -133,7 +140,7 @@
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame NSNavPanelAutosaveName</key>
-	<string>560 564 800 448 0 0 1920 1200 </string>
+	<string>552 567 815 448 0 0 1920 1204 </string>
 	<key>Network_label_position</key>
 	<integer>4</integer>
 	<key>Network_networkChart_position</key>
@@ -163,15 +170,19 @@
 	<key>Network_state</key>
 	<true/>
 	<key>Network_state_position</key>
-	<integer>2</integer>
-	<key>Network_text_position</key>
 	<integer>1</integer>
+	<key>Network_text_position</key>
+	<integer>2</integer>
 	<key>Network_widget</key>
 	<string></string>
+	<key>RAM_mini_alignment</key>
+	<string>left</string>
 	<key>RAM_mini_color</key>
 	<string>monochrome</string>
 	<key>RAM_processes</key>
 	<integer>10</integer>
+	<key>RAM_state</key>
+	<true/>
 	<key>Sensors_barChart_position</key>
 	<integer>3</integer>
 	<key>Sensors_fanValue</key>
@@ -186,8 +197,14 @@
 	<false/>
 	<key>Sensors_sensor</key>
 	<string>Te05</string>
+	<key>Sensors_sensors_alignment</key>
+	<string>left</string>
 	<key>Sensors_sensors_mode</key>
 	<string>automatic</string>
+	<key>Sensors_sensors_monospacedFont</key>
+	<false/>
+	<key>Sensors_sensors_size</key>
+	<false/>
 	<key>Sensors_stack_position</key>
 	<integer>0</integer>
 	<key>Sensors_state</key>
@@ -196,6 +213,8 @@
 	<false/>
 	<key>Sensors_widget</key>
 	<string>sensors</string>
+	<key>pause</key>
+	<false/>
 	<key>runAtLoginInitialized</key>
 	<true/>
 	<key>sensor_Average CPU</key>
@@ -233,14 +252,12 @@
 	<key>setupProcess</key>
 	<true/>
 	<key>support_ts</key>
-	<integer>1747916221</integer>
+	<integer>1758388076</integer>
 	<key>telemetry</key>
 	<false/>
-	<key>telemetry_id</key>
-	<string>F57A6873-020E-443E-8405-35530601BA45</string>
 	<key>updater_check_ts</key>
-	<integer>1747916221</integer>
+	<integer>1760327581</integer>
 	<key>version</key>
-	<string>2.11.43</string>
+	<string>2.11.57</string>
 </dict>
 </plist>
