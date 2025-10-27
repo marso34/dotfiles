@@ -1,7 +1,7 @@
 # Multi-track audio editor and recorder
 cask "audacity"
-# AI-powered translator
-cask "deepl"
+# Generate a timeline of your day, automatically
+cask "dayflow"
 # Voice and text chat software
 cask "discord"
 # Client for the Google Drive storage service
