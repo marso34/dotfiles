@@ -1,4 +1,8 @@
 tap "peterldowns/tap"
+# Run your GitHub Actions locally
+brew "act"
+# Official Amazon AWS command-line interface
+brew "awscli"
 # Emacs dependency management
 brew "cask"
 # Dependency manager for Cocoa projects
