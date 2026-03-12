@@ -59,3 +59,4 @@ cask "slack"
 cask "stats"
 # Open-source code editor
 cask "visual-studio-code"
+cask "zed"

@@ -1,3 +1,4 @@
+tap "elgar328/nfd2nfc"
 tap "peterldowns/tap"
 # Run your GitHub Actions locally
 brew "act"
@@ -13,8 +14,12 @@ brew "ffmpeg"
 brew "gh"
 # Distributed revision control system
 brew "git"
+# Open source programming language to build simple/reliable/efficient software
+brew "go"
 # Mac App Store command-line interface
 brew "mas"
+# Deep clean and optimize your Mac
+brew "mole"
 # Manage multiple Node.js versions
 brew "nvm"
 # OpenBSD freely-licensed SSH connectivity tools
@@ -27,6 +32,8 @@ brew "tree"
 brew "wakeonlan"
 # Feature-rich command-line audio/video downloader
 brew "yt-dlp"
+# Convert filesystem entry names from NFD to NFC for cross-platform compatibility
+brew "elgar328/nfd2nfc/nfd2nfc"
 # Localias is a tool for developers to securely manage local aliases for development servers.
 brew "peterldowns/tap/localias"
 
