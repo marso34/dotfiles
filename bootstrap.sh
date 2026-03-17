@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env zsh
 
 set -e
 trap 'printf "\n❌ 오류 발생: %s 줄 %d\n" "$BASH_COMMAND" "$LINENO"' ERR
@@ -98,7 +98,7 @@ ensure_has_sdkman() {
     printf '☕ Checking for SDKMAN! ... '
     [[ -d "$HOME/.sdkman" ]] && printf 'found\n' || {
         printf 'installing\n'
-        curl -s "https://get.sdkman.io" | zsh
+        curl -s "https://get.sdkman.io" | bash
     }
 }
 
