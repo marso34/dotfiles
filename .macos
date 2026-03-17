@@ -49,7 +49,6 @@ defaults write com.apple.dock wvous-br-modifier -int 1048576
 # defaults write com.apple.controlcenter.plist Sound -bool false      # 소리
 # defaults write com.apple.controlcenter.plist NowPlaying -bool false # 노래
 
-
 ###############################################################################
 # Dock                                                                        #
 ###############################################################################
@@ -72,11 +71,8 @@ defaults write com.apple.dock show-recent-count -int 5
 # defaults write com.apple.dock mineffect -string "genie"           # (Default)
 # 아이콘으로 최소화
 defaults write com.apple.dock minimize-to-application -bool true
-# Dock에 최소화된 윈도우를 표시
-defaults write com.apple.dock showhidden -bool true
 # Dock에 실행중인 앱 표시
 defaults write com.apple.dock show-process-indicators -bool true
-
 
 ###############################################################################
 # Screen                                                                      #
@@ -101,11 +97,10 @@ defaults write com.apple.screencapture location -string "${HOME}/Pictures/Captur
 # 썸네일 표시
 # defaults write com.apple.screencapture show-thumbnail -bool true # (Default)
 # 포맷을 PNG로 설정 (options: png, jpg, pdf, psd, gif, tga, tiff, bmp, heic)
-defaults write com.apple.screencapture type -string "png"        # (Default)
+# defaults write com.apple.screencapture type -string "png"        # (Default)
 
 # HiDPI 모드 활성화 (재시작 필요)
 sudo defaults write /Library/Preferences/com.apple.windowserver DisplayResolutionEnabled -bool true
-
 
 ###############################################################################
 # Finder                                                                      #
@@ -152,7 +147,6 @@ defaults write com.apple.frameworks.diskimages skip-verify-remote -bool true
 
 # chflags nohidden ~/Library && xattr -d com.apple.FinderInfo ~/Library
 
-
 ###############################################################################
 # Trackpad, mouse, keyboard, Bluetooth accessories, and input                 #
 ###############################################################################
@@ -183,9 +177,8 @@ defaults write com.apple.HIToolbox AppleFnUsageType -int 2
 # Fn 키 기본값으로 변경
 defaults write NSGlobalDomain com.apple.keyboard.fnState -bool true
 
-
 ###############################################################################
-# Launchpad                                                                   #
+# Launchpad (이제 사용 X)                                                       #
 ###############################################################################
 
 # 런치패드 아이콘 크기 조절
