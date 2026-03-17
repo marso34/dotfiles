@@ -98,7 +98,7 @@ ensure_has_sdkman() {
     printf '☕ Checking for SDKMAN! ... '
     [[ -d "$HOME/.sdkman" ]] && printf 'found\n' || {
         printf 'installing\n'
-        zsh <(curl -s "https://get.sdkman.io")
+        zsh -o nullglob <(curl -s "https://get.sdkman.io")
     }
 }
 
