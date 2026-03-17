@@ -1,5 +1,3 @@
-# Command-line tool to customize Spotify client
-brew "spicetify-cli"
 # Multi-track audio editor and recorder
 cask "audacity"
 # Generate a timeline of your day, automatically

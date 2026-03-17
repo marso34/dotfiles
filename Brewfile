@@ -10,6 +10,8 @@ brew "cask"
 brew "cocoapods"
 # Play, record, convert, and stream audio and video
 brew "ffmpeg"
+# Interact with Google Gemini AI models from the command-line
+brew "gemini-cli"
 # GitHub command-line tool
 brew "gh"
 # Distributed revision control system
