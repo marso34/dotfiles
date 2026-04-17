@@ -28,8 +28,8 @@ brew "nvm"
 brew "openssh"
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.12"
-# Display directories as trees (with optional color/HTML output)
-brew "tree"
+# Extremely fast Python package installer and resolver, written in Rust
+brew "uv"
 # Sends magic packets to wake up network-devices
 brew "wakeonlan"
 # Feature-rich command-line audio/video downloader

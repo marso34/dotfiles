@@ -17,4 +17,4 @@ cask "onedrive"
 # Music streaming service
 cask "spotify"
 # Video game digital distribution service
-cask "steam"
+# cask "steam"
