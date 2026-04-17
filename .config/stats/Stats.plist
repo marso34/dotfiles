@@ -3,15 +3,17 @@
 <plist version="1.0">
 <dict>
 	<key>Battery_barChart_position</key>
-	<integer>3</integer>
+	<integer>4</integer>
 	<key>Battery_batteryDetails_position</key>
-	<integer>1</integer>
+	<integer>2</integer>
 	<key>Battery_battery_additional</key>
 	<string>percentage</string>
 	<key>Battery_battery_chargerInside</key>
 	<true/>
 	<key>Battery_battery_color</key>
 	<false/>
+	<key>Battery_battery_details_mode</key>
+	<string>percentage</string>
 	<key>Battery_battery_hideAdditionalWhenFull</key>
 	<true/>
 	<key>Battery_battery_position</key>
@@ -21,15 +23,17 @@
 	<key>Battery_color</key>
 	<true/>
 	<key>Battery_label_position</key>
-	<integer>2</integer>
+	<integer>1</integer>
 	<key>Battery_mini_position</key>
-	<integer>4</integer>
+	<integer>3</integer>
 	<key>Battery_notifications_high</key>
 	<string></string>
 	<key>Battery_notifications_low</key>
 	<string>low</string>
 	<key>Battery_state</key>
 	<true/>
+	<key>Battery_timeFormat</key>
+	<string>short</string>
 	<key>Battery_widget</key>
 	<string>battery</string>
 	<key>Bluetooth_state</key>
@@ -37,6 +41,8 @@
 	<key>CPU_state</key>
 	<true/>
 	<key>Clock_state</key>
+	<false/>
+	<key>CombinedModules</key>
 	<false/>
 	<key>Disk_barChart_position</key>
 	<integer>5</integer>
@@ -71,11 +77,11 @@
 	<key>GPU_mini_position</key>
 	<integer>0</integer>
 	<key>GPU_state</key>
-	<true/>
+	<false/>
 	<key>GPU_tachometer_position</key>
 	<integer>4</integer>
 	<key>GPU_widget</key>
-	<string></string>
+	<string>mini</string>
 	<key>LaunchAtLoginNext</key>
 	<true/>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
@@ -104,14 +110,20 @@
 	AQAAAAAAABHAAAAgAAAAAAAAABLAAAA0AQAAAAAAAAHQAAAcAQAAAAAAABDQAAAEAAAA
 	AAAAABfwAABUAAAAAAAAACLwAADcAQAAAAAAAA==
 	</data>
+	<key>NSStatusItem Preferred Position Battery</key>
+	<real>143</real>
 	<key>NSStatusItem Preferred Position Battery_battery</key>
 	<real>143</real>
+	<key>NSStatusItem Preferred Position CPU</key>
+	<real>557</real>
 	<key>NSStatusItem Preferred Position CPU_mini</key>
-	<real>552</real>
+	<real>549</real>
+	<key>NSStatusItem Preferred Position RAM</key>
+	<real>506</real>
 	<key>NSStatusItem Preferred Position RAM_mini</key>
-	<real>505</real>
+	<real>502</real>
 	<key>NSStatusItem Preferred Position Sensors_sensors</key>
-	<real>599</real>
+	<real>596</real>
 	<key>NSStatusItem Restore Position Clock_sensors</key>
 	<integer>667</integer>
 	<key>NSStatusItem Restore Position Disk_label</key>
@@ -141,12 +153,20 @@
 	</dict>
 	<key>NSWindow Frame NSNavPanelAutosaveName</key>
 	<string>552 567 815 448 0 0 1920 1204 </string>
+	<key>NSWindow Frame eu.exelban.Stats.Settings.WindowFrame</key>
+	<string>599 436 728 480 0 0 1920 1205 </string>
+	<key>Network_emojiCC</key>
+	<true/>
 	<key>Network_label_position</key>
 	<integer>4</integer>
 	<key>Network_networkChart_position</key>
 	<integer>3</integer>
 	<key>Network_oneView</key>
 	<false/>
+	<key>Network_publicIPRefreshInterval</key>
+	<string>never</string>
+	<key>Network_reader</key>
+	<string>interface</string>
 	<key>Network_reverseOrder</key>
 	<false/>
 	<key>Network_speed_displayValue</key>
@@ -158,7 +178,7 @@
 	<key>Network_speed_monochrome</key>
 	<false/>
 	<key>Network_speed_position</key>
-	<integer>0</integer>
+	<integer>1</integer>
 	<key>Network_speed_units</key>
 	<true/>
 	<key>Network_speed_value</key>
@@ -170,19 +190,37 @@
 	<key>Network_state</key>
 	<true/>
 	<key>Network_state_position</key>
-	<integer>1</integer>
+	<integer>0</integer>
 	<key>Network_text_position</key>
 	<integer>2</integer>
 	<key>Network_widget</key>
 	<string></string>
+	<key>RAM_barChart_position</key>
+	<integer>3</integer>
+	<key>RAM_label_position</key>
+	<integer>1</integer>
+	<key>RAM_lineChart_position</key>
+	<integer>2</integer>
+	<key>RAM_memory_position</key>
+	<integer>5</integer>
 	<key>RAM_mini_alignment</key>
 	<string>left</string>
 	<key>RAM_mini_color</key>
 	<string>monochrome</string>
+	<key>RAM_mini_position</key>
+	<integer>0</integer>
+	<key>RAM_pieChart_position</key>
+	<integer>4</integer>
 	<key>RAM_processes</key>
 	<integer>10</integer>
 	<key>RAM_state</key>
 	<true/>
+	<key>RAM_tachometer_position</key>
+	<integer>6</integer>
+	<key>RAM_text_position</key>
+	<integer>7</integer>
+	<key>RAM_widget</key>
+	<string>mini</string>
 	<key>Sensors_barChart_position</key>
 	<integer>3</integer>
 	<key>Sensors_fanValue</key>
@@ -196,7 +234,7 @@
 	<key>Sensors_oneView</key>
 	<false/>
 	<key>Sensors_sensor</key>
-	<string>Te05</string>
+	<string>Average CPU</string>
 	<key>Sensors_sensors_alignment</key>
 	<string>left</string>
 	<key>Sensors_sensors_mode</key>
@@ -215,13 +253,13 @@
 	<string>sensors</string>
 	<key>pause</key>
 	<false/>
-	<key>remote_id</key>
-	<string>F57A6873-020E-443E-8405-35530601BA45</string>
 	<key>runAtLoginInitialized</key>
 	<true/>
 	<key>sensor_Average CPU</key>
-	<false/>
+	<true/>
 	<key>sensor_Average System Total</key>
+	<false/>
+	<key>sensor_CPU Power</key>
 	<false/>
 	<key>sensor_Hottest CPU</key>
 	<false/>
@@ -240,7 +278,7 @@
 	<key>sensor_TW0P</key>
 	<false/>
 	<key>sensor_Te05</key>
-	<true/>
+	<false/>
 	<key>sensor_Te0L</key>
 	<false/>
 	<key>sensor_Te0P</key>
@@ -254,12 +292,14 @@
 	<key>setupProcess</key>
 	<true/>
 	<key>support_ts</key>
-	<integer>1770030744</integer>
+	<integer>1774179885</integer>
 	<key>telemetry</key>
 	<false/>
+	<key>temperature_units</key>
+	<string>system</string>
 	<key>updater_check_ts</key>
-	<integer>1768666618</integer>
+	<integer>1775923623</integer>
 	<key>version</key>
-	<string>2.11.64</string>
+	<string>2.12.8</string>
 </dict>
 </plist>
