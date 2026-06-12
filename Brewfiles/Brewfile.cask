@@ -8,12 +8,12 @@ cask "betterdisplay"
 cask "bruno"
 # Terminal-based AI coding assistant
 cask "claude-code"
+# OpenAI's coding agent that runs in your terminal
+cask "codex"
 # Databases and SQL IDE
 cask "datagrip"
 # AI-powered translator
 cask "deepl"
-# App to build and share containerised applications and microservices
-cask "docker-desktop"
 # Launch builds and start simulators from your menu bar
 # cask "expo-orbit"
 # Collaborative team software
@@ -50,6 +50,8 @@ cask "microsoft-word"
 cask "notion"
 # Knowledge base that works on top of a local folder of plain text Markdown files
 cask "obsidian"
+# Browse, manage, inspect containers and images
+cask "podman-desktop"
 # Control your tools with a few keystrokes
 cask "raycast"
 # Screenshot measurement and annotation tool
