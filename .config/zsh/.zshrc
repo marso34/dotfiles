@@ -23,8 +23,8 @@ export SDKMAN_DIR="$HOME/.sdkman"
 # export ANDROID_HOME="$HOME/Library/Android/Sdk"
 # export PATH="$ANDROID_HOME/emulator:$ANDROID_HOME/platform-tools:$PATH"
 
-# Docker Desktop
-fpath=(/Users/thought/.docker/completions $fpath)
+# Docker 명령어를 Podman으로 치환
+alias docker=podman
 
 # --------- Zsh Options --------- #
 HIST_STAMPS="yyyy-mm-dd"
