@@ -33,9 +33,9 @@ eval(File.read(File.expand_path("Brewfiles/Brewfile.cask")))
 
   ```ruby
   # brewfile 생성
-  brew bundle dump --describe # --describe 자동 주석
+  brew bundle dump
   # 지정된 이름으로 brewfile 생성
-  brew bundle dump --describe --file='name'
+  brew bundle dump --file='name'
 
   # brefile 설치
   brew bundle install
@@ -43,6 +43,3 @@ eval(File.read(File.expand_path("Brewfiles/Brewfile.cask")))
   brew bundle install --file name
   ```
 </details>
-
-
-
