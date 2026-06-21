@@ -7,7 +7,7 @@
 	<key>Battery_batteryDetails_position</key>
 	<integer>2</integer>
 	<key>Battery_battery_additional</key>
-	<string>percentage</string>
+	<string>none</string>
 	<key>Battery_battery_chargerInside</key>
 	<true/>
 	<key>Battery_battery_color</key>
@@ -38,8 +38,22 @@
 	<string>battery</string>
 	<key>Bluetooth_state</key>
 	<false/>
+	<key>CPU_barChart_position</key>
+	<integer>3</integer>
+	<key>CPU_label_position</key>
+	<integer>1</integer>
+	<key>CPU_lineChart_position</key>
+	<integer>2</integer>
+	<key>CPU_mini_position</key>
+	<integer>0</integer>
+	<key>CPU_pieChart_position</key>
+	<integer>4</integer>
 	<key>CPU_state</key>
 	<true/>
+	<key>CPU_tachometer_position</key>
+	<integer>5</integer>
+	<key>CPU_widget</key>
+	<string>mini</string>
 	<key>Clock_state</key>
 	<false/>
 	<key>CombinedModules</key>
@@ -63,7 +77,7 @@
 	<key>Disk_speed_position</key>
 	<integer>1</integer>
 	<key>Disk_state</key>
-	<false/>
+	<true/>
 	<key>Disk_text_position</key>
 	<integer>4</integer>
 	<key>Disk_widget</key>
@@ -77,11 +91,11 @@
 	<key>GPU_mini_position</key>
 	<integer>0</integer>
 	<key>GPU_state</key>
-	<false/>
+	<true/>
 	<key>GPU_tachometer_position</key>
 	<integer>4</integer>
 	<key>GPU_widget</key>
-	<string>mini</string>
+	<string></string>
 	<key>LaunchAtLoginNext</key>
 	<true/>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
@@ -92,23 +106,21 @@
 	<true/>
 	<key>NSOSPLastRootDirectory</key>
 	<data>
-	Ym9va0wDAAAAAAUQQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-	AAAAAAAAAAAAAAAAABQCAAAEAAAAAwMAAAAEAAAFAAAAAQEAAFVzZXJzAAAABwAAAAEB
+	Ym9va/wCAAAAAAUQQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+	AAAAAAAAAAAAAAAAANwBAAAEAAAAAwMAAAAAACAFAAAAAQEAAFVzZXJzAAAABwAAAAEB
 	AAB0aG91Z2h0AAkAAAABAQAALmRvdGZpbGVzAAAABwAAAAEBAAAuY29uZmlnAAUAAAAB
 	AQAAc3RhdHMAAAAUAAAAAQYAABAAAAAgAAAAMAAAAEQAAABUAAAACAAAAAQDAAB9QgAA
 	AAAAAAgAAAAEAwAAEGoAAAAAAAAIAAAABAMAAM1bcgEAAAAACAAAAAQDAAAnYnIBAAAA
 	AAgAAAAEAwAALd4jAgAAAAAUAAAAAQYAAIAAAACQAAAAoAAAALAAAADAAAAACAAAAAAE
-	AABBxvxT4doo4xgAAAABAgAAAgAAAAAAAAAfAgAAAAAAAB8CAAAAAAAAAAAAAAEFAAAI
+	AABBxvxT4doo4xgAAAABAgAAAgAAAAAAAAAPAAAAAAAAAAAAAAAAAAAAAAAAAAEFAAAI
 	AAAABAMAAAMAAAAAAAAABAAAAAMDAAD1AQAACAAAAAEJAABmaWxlOi8vLwwAAAABAQAA
-	TWFjaW50b3NoIEhECAAAAAQDAAAAUKEbcwAAAAgAAAAABAAAQcdo+3QAAAAkAAAAAQEA
+	TWFjaW50b3NoIEhECAAAAAQDAAAAUKEbcwAAAAgAAAAABAAAQcffgC8AAAAkAAAAAQEA
 	ADNCNzhBRjJGLUVFODItNDNEMy04MTJGLUM2REE0RTE3RkEzQhgAAAABAgAAgQAAAAEA
-	AADvEwAAAQAAAO8TAAABAAAAAQAAAAEBAAAvAAAAMAAAAAECAABkbmliAAAAAAEAAAAA
-	AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAByZGxmAgAAAAAAAADwAAAA/v///wEAAAAAAAAA
-	EwAAAAQQAABkAAAAAAAAAAUQAADQAAAAAAAAABAQAAD8AAAAAAAAAEAQAADsAAAAAAAA
-	AAIgAADQAQAAAAAAAAUgAABAAQAAAAAAABAgAABQAQAAAAAAABEgAACEAQAAAAAAABIg
-	AABkAQAAAAAAABMgAAB0AQAAAAAAACAgAACwAQAAAAAAADAgAAAcAQAAAAAAAAHAAAAk
-	AQAAAAAAABHAAAAgAAAAAAAAABLAAAA0AQAAAAAAAAHQAAAcAQAAAAAAABDQAAAEAAAA
-	AAAAABfwAABUAAAAAAAAACLwAADcAQAAAAAAAA==
+	AADvEwAAAQAAAAAAAAAAAAAAAQAAAAEBAAAvAAAA2AAAAP7///8BAAAAAAAAABEAAAAE
+	EAAAZAAAAAAAAAAFEAAA0AAAAAAAAAAQEAAA/AAAAAAAAABAEAAA7AAAAAAAAAACIAAA
+	0AEAAAAAAAAFIAAAQAEAAAAAAAAQIAAAUAEAAAAAAAARIAAAhAEAAAAAAAASIAAAZAEA
+	AAAAAAATIAAAdAEAAAAAAAAgIAAAsAEAAAAAAAAwIAAAHAEAAAAAAAABwAAAJAEAAAAA
+	AAARwAAAIAAAAAAAAAASwAAANAEAAAAAAAAB0AAAHAEAAAAAAAAQ0AAABAAAAAAAAAA=
 	</data>
 	<key>NSStatusItem Preferred Position Battery</key>
 	<real>143</real>
@@ -117,13 +129,13 @@
 	<key>NSStatusItem Preferred Position CPU</key>
 	<real>557</real>
 	<key>NSStatusItem Preferred Position CPU_mini</key>
-	<real>549</real>
+	<real>520</real>
 	<key>NSStatusItem Preferred Position RAM</key>
 	<real>506</real>
 	<key>NSStatusItem Preferred Position RAM_mini</key>
-	<real>502</real>
+	<real>473</real>
 	<key>NSStatusItem Preferred Position Sensors_sensors</key>
-	<real>596</real>
+	<real>567</real>
 	<key>NSStatusItem Restore Position Clock_sensors</key>
 	<integer>667</integer>
 	<key>NSStatusItem Restore Position Disk_label</key>
@@ -154,7 +166,7 @@
 	<key>NSWindow Frame NSNavPanelAutosaveName</key>
 	<string>552 567 815 448 0 0 1920 1204 </string>
 	<key>NSWindow Frame eu.exelban.Stats.Settings.WindowFrame</key>
-	<string>599 436 728 480 0 0 1920 1205 </string>
+	<string>567 297 798 596 0 0 1920 1205 </string>
 	<key>Network_emojiCC</key>
 	<true/>
 	<key>Network_label_position</key>
@@ -221,6 +233,8 @@
 	<integer>7</integer>
 	<key>RAM_widget</key>
 	<string>mini</string>
+	<key>Remote_state</key>
+	<false/>
 	<key>Sensors_barChart_position</key>
 	<integer>3</integer>
 	<key>Sensors_fanValue</key>
@@ -251,8 +265,12 @@
 	<false/>
 	<key>Sensors_widget</key>
 	<string>sensors</string>
+	<key>keep_menubar_positions</key>
+	<true/>
 	<key>pause</key>
 	<false/>
+	<key>remote_tokens_migrated_to_keychain</key>
+	<true/>
 	<key>runAtLoginInitialized</key>
 	<true/>
 	<key>sensor_Average CPU</key>
@@ -292,14 +310,16 @@
 	<key>setupProcess</key>
 	<true/>
 	<key>support_ts</key>
-	<integer>1774179885</integer>
+	<integer>1780682758</integer>
 	<key>telemetry</key>
 	<false/>
 	<key>temperature_units</key>
 	<string>system</string>
 	<key>updater_check_ts</key>
-	<integer>1775923623</integer>
+	<integer>1782030456</integer>
+	<key>updater_install_ts</key>
+	<integer>1780907811</integer>
 	<key>version</key>
-	<string>2.12.8</string>
+	<string>3.0.3</string>
 </dict>
 </plist>
