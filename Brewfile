@@ -34,6 +34,8 @@ brew "python@3.12"
 brew "wakeonlan"
 # Feature-rich command-line audio/video downloader
 brew "yt-dlp"
+# Localias is a tool for developers to securely manage local aliases for development servers.
+brew "peterldowns/tap/localias", trusted: true
 
 # 환경별 Brewfile 불러오기
 eval(File.read(File.expand_path("Brewfiles/Brewfile.cask")))
