@@ -22,6 +22,8 @@ brew "go"
 brew "mas"
 # Deep clean and optimize your Mac
 brew "mole"
+# Convert filesystem entry names from NFD to NFC for cross-platform compatibility
+brew "nfd2nfc"
 # Manage multiple Node.js versions
 brew "nvm"
 # OpenBSD freely-licensed SSH connectivity tools

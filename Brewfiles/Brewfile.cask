@@ -7,7 +7,7 @@ cask "betterdisplay"
 # Opensource IDE for exploring and testing api's
 cask "bruno"
 # Terminal-based AI coding assistant
-cask "claude-code"
+cask "claude-code@latest"
 # OpenAI's coding agent that runs in your terminal
 cask "codex"
 # Databases and SQL IDE
