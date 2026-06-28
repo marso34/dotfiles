@@ -36,7 +36,7 @@ defaults write com.apple.dock wvous-br-modifier -int 1048576
 # 스페이스
 # 자동 재배열
 # defaults write com.apple.dock mru-spaces -bool false             # (Default)
-# 앱 그룹화 비활성화 
+# 앱 그룹화 비활성화
 # defaults write com.apple.dock expose-group-apps -bool false      # (Default)
 # 열린 창으로 공간으로 전환
 # defaults write NSGlobalDomain AppleSpacesSwitchOnActivate -bool true # (Default)
@@ -87,7 +87,7 @@ defaults write com.apple.screensaver idleTime -int 600
 # 디스플레이 끄기 시간 15분
 sudo pmset -a displaysleep 15
 
-# 스크린샷 
+# 스크린샷
 # 그림자 제거
 defaults write com.apple.screencapture disable-shadow -bool true
 # 파일명에 날짜 포함
@@ -122,7 +122,7 @@ defaults write com.apple.finder ShowStatusBar -bool true
 # 기본 Finder 뷰를 리스트로 설정 (options: icnv, clmv, glyv, Nlsv)
 defaults write com.apple.finder FXPreferredViewStyle -string "Nlsv"
 # 폴더를 먼저 정렬
-defaults write com.apple.finder _FXSortFoldersFirst -bool true 
+defaults write com.apple.finder _FXSortFoldersFirst -bool true
 
 # 새 창에서 폴더 열기
 defaults write com.apple.finder FinderSpawnTab -bool false
