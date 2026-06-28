@@ -9,6 +9,17 @@ HOME_DIR="${HOME_DIR:-$HOME}"
 BIN_DIR="${BIN_DIR:-$HOME/.local/bin}"
 DOC_DIR="${DOC_DIR:-$HOME/Documents}"
 
+# 설치 프로파일 (인자 > 환경변수 > 기본값)
+PROFILE="${1:-${DOTFILES_PROFILE:-personal}}" # ./bootstrap.sh work 또는 DOTFILES_PROFILE=work ./bootstrap.sh
+
+case "$PROFILE" in
+    personal|work|full|ci) ;;
+    *)
+        printf '❌ 알 수 없는 프로파일: %s (사용 가능: personal | work | full | ci)\n' "$PROFILE"
+        exit 1
+        ;;
+esac
+
 main() {
     # 디렉터리 생성
     ensure_dir
@@ -107,8 +118,15 @@ install_brewfile() {
     echo "🔄 Update..."
     brew update
 
-    echo "📦 Brewfile installation..."
-    brew bundle install --file "$DOTFILES_DIR/Brewfile"
+    echo "📦 Brewfile installation (profile: $PROFILE)..."
+    DOTFILES_PROFILE="$PROFILE" brew bundle install --jobs 1 --file "$DOTFILES_DIR/Brewfile"
+
+    # Mac App Store: ci 프로파일 제외 + 실패해도 bootstrap 중단 안 함 (App Store 로그인 필요)
+    if [ "$PROFILE" != "ci" ]; then
+        echo "🛍️  Mac App Store apps (best-effort)..."
+        brew bundle install --file "$DOTFILES_DIR/Brewfiles/Brewfile.mas" \
+            || printf '⚠️  일부 App Store 앱 설치 실패 — 건너뛰고 계속합니다\n'
+    fi
 }
 
 # 심볼릭 링크를 강제로 생성하는 함수 (기존 링크를 덮어씀)
