@@ -1,0 +1,29 @@
+cask "aldente"
+# Display management tool
+cask "betterdisplay"
+# AI-powered translator
+cask "deepl"
+# Free and open-source media player
+cask "iina"
+# Terminal emulator as alternative to Apple's Terminal app
+cask "iterm2"
+# Keyboard customiser
+cask "karabiner-elements"
+# File archiver
+cask "keka"
+# Helper application for the Keka file archiver
+cask "kekaexternalhelper"
+# Menu bar browser
+cask "menubarx"
+# Web browser
+cask "naver-whale"
+# App to write, plan, collaborate, and get organised
+cask "notion"
+# Knowledge base that works on top of a local folder of plain text Markdown files
+cask "obsidian"
+# Control your tools with a few keystrokes
+cask "raycast"
+# Screenshot measurement and annotation tool
+cask "shottr"
+# System monitor for the menu bar
+cask "stats"
