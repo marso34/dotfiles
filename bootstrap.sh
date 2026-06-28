@@ -10,7 +10,7 @@ BIN_DIR="${BIN_DIR:-$HOME/.local/bin}"
 DOC_DIR="${DOC_DIR:-$HOME/Documents}"
 
 # 설치 프로파일 (인자 > 환경변수 > 기본값)
-PROFILE="${1:-${DOTFILES_PROFILE:-personal}}" # ./bootstrap.sh work 또는 DOTFILES_PROFILE=work ./bootstrap.sh
+PROFILE="${1:-${DOTFILES_PROFILE:-full}}" # ./bootstrap.sh work 또는 DOTFILES_PROFILE=work ./bootstrap.sh
 
 case "$PROFILE" in
     personal|work|full|ci) ;;
@@ -119,7 +119,8 @@ install_brewfile() {
     brew update
 
     echo "📦 Brewfile installation (profile: $PROFILE)..."
-    DOTFILES_PROFILE="$PROFILE" brew bundle install --jobs 1 --file "$DOTFILES_DIR/Brewfile"
+    # Homebrew는 HOMEBREW_* 접두사가 없는 환경변수를 제거하므로 접두사를 붙여 전달
+    HOMEBREW_DOTFILES_PROFILE="$PROFILE" brew bundle install --jobs 1 --file "$DOTFILES_DIR/Brewfile"
 
     # Mac App Store: ci 프로파일 제외 + 실패해도 bootstrap 중단 안 함 (App Store 로그인 필요)
     if [ "$PROFILE" != "ci" ]; then

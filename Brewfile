@@ -38,15 +38,16 @@ brew "yt-dlp"
 brew "peterldowns/tap/localias", trusted: true
 
 # ── 프로파일 선택 ──
-# 사용법: DOTFILES_PROFILE=personal|work|full|ci  (기본값: full)
+# 사용법: HOMEBREW_DOTFILES_PROFILE=personal|work|full|ci  (기본값: full)
 #   personal → 공통 + 개인용 앱 + 폰트
 #   work     → 공통 + 업무/개발용 앱 + 폰트
 #   full     → 공통 + 업무 + 개인용 앱 + 폰트
 #   ci       → brew 포뮬러만 (cask·폰트·mas 전부 스킵 — GUI/App Store 불가)
-profile = ENV["DOTFILES_PROFILE"] || "full"
+env_profile = ENV["HOMEBREW_DOTFILES_PROFILE"].to_s.strip
+profile = env_profile.empty? ? "full" : env_profile
 
 # 폰트
-eval(File.read(File.expand_path("Brewfiles/Brewfile.fonts")))
+eval(File.read(File.expand_path("Brewfiles/Brewfile.fonts")))    if profile != "ci"
 # 공통 앱 (cask)
 eval(File.read(File.expand_path("Brewfiles/Brewfile.common")))   if profile != "ci"
 # 프로파일별 cask
