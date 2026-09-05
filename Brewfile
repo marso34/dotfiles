@@ -2,8 +2,6 @@ tap "elgar328/nfd2nfc"
 tap "peterldowns/tap"
 # Run your GitHub Actions locally
 brew "act"
-# Official Amazon AWS command-line interface
-brew "awscli"
 # Emacs dependency management
 brew "cask"
 # Dependency manager for Cocoa projects
@@ -30,6 +28,8 @@ brew "nvm"
 brew "openssh"
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.12"
+# Extremely fast Python package installer and resolver, written in Rust
+brew "uv"
 # Sends magic packets to wake up network-devices
 brew "wakeonlan"
 # Feature-rich command-line audio/video downloader

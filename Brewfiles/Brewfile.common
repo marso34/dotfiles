@@ -3,6 +3,8 @@ cask "aldente"
 cask "betterdisplay"
 # AI-powered translator
 cask "deepl"
+# View and edit HWP documents
+cask "hop"
 # Free and open-source media player
 cask "iina"
 # Terminal emulator as alternative to Apple's Terminal app
@@ -15,6 +17,14 @@ cask "keka"
 cask "kekaexternalhelper"
 # Menu bar browser
 cask "menubarx"
+# Provides updates to various Microsoft products
+cask "microsoft-auto-update"
+# Spreadsheet software
+cask "microsoft-excel"
+# Presentation software
+cask "microsoft-powerpoint"
+# Word processor
+cask "microsoft-word"
 # Web browser
 cask "naver-whale"
 # App to write, plan, collaborate, and get organised
