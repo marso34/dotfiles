@@ -54,10 +54,9 @@ bin_exists() {
 ensure_dir() {
     dir=(
         "Dev/personal"
-        "Dev/company"
+        "Dev/work"
         "Dev/etc"
         "Bruno"
-        "Obsidian"
     )
 
     for d in "${dir[@]}"; do
@@ -180,23 +179,3 @@ setup_iterm2() {
 # main 함수 실행
 main
 
-# # clone git repository (obsidian)
-# clone_git_repo() {
-#     # 클론할 리포지토리 URL
-#     REPO_URL="https://github.com/사용자명/리포지토리명.git"
-
-#     # 클론할 디렉토리 (선택 사항: 기본적으로 리포지토리명으로 클론됨)
-#     TARGET_DIR="repo-directory"
-
-#     # 이미 디렉토리가 존재하면 삭제 (주의: 데이터 손실 가능)
-#     if [ -d "$TARGET_DIR" ]; then
-#         echo "Removing existing directory: $TARGET_DIR"
-#         rm -rf "$TARGET_DIR"
-#     fi
-
-#     # 리포지토리 클론
-#     echo "Cloning repository..."
-#     git clone "$REPO_URL" "$TARGET_DIR"
-
-#     echo "Repository cloned successfully!"
-# }

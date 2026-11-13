@@ -3,22 +3,19 @@
     email = mars102aq@gmail.com
     signingkey = ~/.ssh/id_ed25519
 
-[includeIf "gitdir:~/Document/Dev/personal/"]
-    path = ~/.dotfiles/.config/git/.gitconfig-personal
-
-[includeIf "gitdir:~/Document/Dev/company/"]
-    path = ~/.dotfiles/.config/git/.gitconfig-company
+[includeIf "gitdir:~/Documents/Dev/work/"]
+    path = ~/.dotfiles/.config/git/.gitconfig.work
 
 [core]
     autocrlf = false
-    fsmonitor = true  
-    untrackedCache = true  
+    fsmonitor = true
+    untrackedCache = true
     excludesfile = ~/.dotfiles/.config/git/.gitignore_global  # 전역 .gitignore
 
 [advice]
     diverging = false
-    
-[column]  
+
+[column]
     ui = auto
 
 [color]
@@ -34,10 +31,10 @@
     default = upstream
     followTags = true
 
-[fetch]  
-    prune = true  
-    pruneTags = true  
-    all = true  
+[fetch]
+    prune = true
+    pruneTags = true
+    all = true
 
 [pull]
     rebase = true
@@ -48,14 +45,14 @@
 [branch]
     sort = -committerdate  # 최근 커밋 날짜 순으로 정렬
 
-[tag]  
+[tag]
     sort = version:refname # 버전 순으로 정렬
 
-[diff]  
-    algorithm = histogram  
-    colorMoved = plain  
-    mnemonicPrefix = true  
-    renames = true 
+[diff]
+    algorithm = histogram
+    colorMoved = plain
+    mnemonicPrefix = true
+    renames = true
 
 [gpg]
     format = ssh
