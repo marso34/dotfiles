@@ -23,9 +23,6 @@ export SDKMAN_DIR="$HOME/.sdkman"
 # export ANDROID_HOME="$HOME/Library/Android/Sdk"
 # export PATH="$ANDROID_HOME/emulator:$ANDROID_HOME/platform-tools:$PATH"
 
-# Docker 명령어를 Podman으로 치환
-alias docker=podman
-
 # --------- Zsh Options --------- #
 HIST_STAMPS="yyyy-mm-dd"
 ZSH_THEME="powerlevel10k/powerlevel10k"
@@ -46,3 +43,6 @@ source $ZSH/oh-my-zsh.sh
 # zsh-history-substring-search
 bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
+
+# bun completions
+[ -s "$HOME/.bun/_bun" ] && source "$HOME/.bun/_bun"
