@@ -6,8 +6,6 @@ brew "act"
 brew "cask"
 # Dependency manager for Cocoa projects
 brew "cocoapods"
-# Isolated development environments using Docker
-brew "docker-compose"
 # Play, record, convert, and stream audio and video
 brew "ffmpeg"
 # GitHub command-line tool
@@ -47,11 +45,11 @@ env_profile = ENV["HOMEBREW_DOTFILES_PROFILE"].to_s.strip
 profile = env_profile.empty? ? "full" : env_profile
 
 # 폰트
-eval(File.read(File.expand_path("Brewfiles/Brewfile.fonts")))    if profile != "ci"
+eval(File.read(File.expand_path("Brewfiles/Brewfile.fonts", __dir__)))    if profile != "ci"
 # 공통 앱 (cask)
-eval(File.read(File.expand_path("Brewfiles/Brewfile.common")))   if profile != "ci"
+eval(File.read(File.expand_path("Brewfiles/Brewfile.common", __dir__)))   if profile != "ci"
 # 프로파일별 cask
-eval(File.read(File.expand_path("Brewfiles/Brewfile.work")))     if %w[work full].include?(profile)
-eval(File.read(File.expand_path("Brewfiles/Brewfile.personal"))) if %w[personal full].include?(profile)
+eval(File.read(File.expand_path("Brewfiles/Brewfile.work", __dir__)))     if %w[work full].include?(profile)
+eval(File.read(File.expand_path("Brewfiles/Brewfile.personal", __dir__))) if %w[personal full].include?(profile)
 
 # Mac App Store(mas)는 bootstrap.sh가 별도 설치
