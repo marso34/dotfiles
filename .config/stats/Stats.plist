@@ -133,13 +133,13 @@
 	<key>NSStatusItem Preferred Position CPU</key>
 	<real>557</real>
 	<key>NSStatusItem Preferred Position CPU_mini</key>
-	<integer>552</integer>
+	<real>520</real>
 	<key>NSStatusItem Preferred Position RAM</key>
 	<real>506</real>
 	<key>NSStatusItem Preferred Position RAM_mini</key>
-	<real>505</real>
+	<real>473</real>
 	<key>NSStatusItem Preferred Position Sensors_sensors</key>
-	<real>599</real>
+	<real>567</real>
 	<key>NSStatusItem Restore Position Clock_sensors</key>
 	<integer>667</integer>
 	<key>NSStatusItem Restore Position Disk_label</key>
@@ -318,18 +318,18 @@
 	<key>support_pending</key>
 	<false/>
 	<key>support_pending_ts</key>
-	<integer>1789912600</integer>
+	<integer>1793547456</integer>
 	<key>support_ts</key>
-	<integer>1790594438</integer>
+	<integer>1793794689</integer>
 	<key>telemetry</key>
 	<false/>
 	<key>temperature_units</key>
 	<string>system</string>
 	<key>updater_check_ts</key>
-	<integer>1793002178</integer>
+	<integer>1794433306</integer>
 	<key>updater_install_ts</key>
 	<integer>1791718540</integer>
 	<key>version</key>
-	<string>3.0.23</string>
+	<string>3.0.26</string>
 </dict>
 </plist>
