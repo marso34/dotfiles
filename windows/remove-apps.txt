@@ -1,0 +1,20 @@
+# 삭제할 Windows 기본 앱 — windows/apps.ps1이 현재 사용자에서 제거 (ci 제외 모든 프로파일)
+# 한 줄에 Appx 패키지 이름 하나, # 뒤는 주석. 설치된 이름 확인: Get-AppxPackage | Select Name
+# 큰 Windows 업데이트 후 다시 생기면 apps.ps1을 다시 실행
+
+Microsoft.BingWeather           # 날씨
+Microsoft.BingNews              # 뉴스
+Microsoft.WindowsMaps           # 지도
+Microsoft.WindowsFeedbackHub    # 피드백 허브
+Clipchamp.Clipchamp             # Clipchamp
+
+# Xbox
+Microsoft.GamingApp             # Xbox 앱 (Windows 11)
+Microsoft.XboxApp               # Xbox 콘솔 컴패니언 (Windows 10 시절 앱)
+Microsoft.XboxGameOverlay       # Xbox 게임 오버레이
+
+# 아래는 게임 실행 · 로그인에 쓰이므로 유지 (Steam 등에서 Xbox 계정을 쓰는 게임이 있음)
+# Microsoft.XboxGamingOverlay       # Game Bar — 일부 게임 필요, 최신 CPU에서 게임 성능 저하 가능
+# Microsoft.XboxIdentityProvider    # Xbox 로그인
+# Microsoft.Xbox.TCUI               # Xbox 프로필 · 초대 UI
+# Microsoft.XboxSpeechToTextOverlay # 게임 채팅 음성 → 텍스트

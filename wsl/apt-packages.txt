@@ -1,0 +1,15 @@
+# wsl/install.sh가 apt로 설치 (# 주석, 빈 줄 무시)
+
+# 기본 도구
+build-essential
+ca-certificates
+curl
+wget
+jq
+zip
+unzip
+
+# git (.gitconfig의 lfs 필터가 required라 git-lfs 필수)
+git
+git-lfs
+openssh-client

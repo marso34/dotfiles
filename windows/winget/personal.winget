@@ -1,0 +1,47 @@
+# yaml-language-server: $schema=https://aka.ms/configuration-dsc-schema/0.2
+# 개인용 앱 (Brewfiles/Brewfile.personal 대응) — windows/apps.ps1이 프로파일에 따라 적용 (winget configure)
+properties:
+  configurationVersion: 0.2.0
+  resources:
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: discord-discord
+      directives:
+        description: Discord
+      settings:
+        id: Discord.Discord
+        source: winget
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: spotify-spotify
+      directives:
+        description: Spotify
+      settings:
+        id: Spotify.Spotify
+        source: winget
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: valve-steam
+      directives:
+        description: Steam
+      settings:
+        id: Valve.Steam
+        source: winget
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: obsproject-obsstudio
+      directives:
+        description: OBS Studio
+      settings:
+        id: OBSProject.OBSStudio
+        source: winget
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: audacity-audacity
+      directives:
+        description: Audacity
+      settings:
+        id: Audacity.Audacity
+        source: winget
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: google-googledrive
+      directives:
+        description: Google Drive
+      settings:
+        id: Google.GoogleDrive
+        source: winget

@@ -1,0 +1,13 @@
+# %UserProfile%\.wslconfig — 모든 WSL2 배포판에 적용 (wsl/install.sh가 복사)
+# 변경 후 PowerShell에서 `wsl --shutdown` 해야 적용됨
+
+[wsl2]
+# Windows 네트워크를 그대로 사용 (localhost 공유, VPN 호환). Windows 11 22H2+
+networkingMode=mirrored
+dnsTunneling=true
+
+[experimental]
+# 유휴 시 캐시 메모리 점진 반환 (Docker Desktop 문서도 권장)
+autoMemoryReclaim=gradual
+# 새로 만드는 VHD를 sparse로 (기존 배포판에는 적용 안 됨)
+sparseVhd=true

@@ -1,0 +1,71 @@
+# yaml-language-server: $schema=https://aka.ms/configuration-dsc-schema/0.2
+# 공통 앱 (Brewfiles/Brewfile.common 대응) — windows/apps.ps1이 프로파일에 따라 적용 (winget configure)
+properties:
+  configurationVersion: 0.2.0
+  resources:
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: microsoft-windowsterminal
+      directives:
+        description: Windows Terminal
+      settings:
+        id: Microsoft.WindowsTerminal
+        source: winget
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: microsoft-powertoys
+      directives:
+        description: PowerToys (Raycast, Karabiner 대응)
+      settings:
+        id: Microsoft.PowerToys
+        source: winget
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: microsoft-office
+      directives:
+        description: Microsoft Office (Word, Excel, PowerPoint)
+        securityContext: elevated
+      settings:
+        id: Microsoft.Office
+        source: winget
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: deepl-deepl
+      directives:
+        description: DeepL
+      settings:
+        id: DeepL.DeepL
+        source: winget
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: naver-whale
+      directives:
+        description: 네이버 웨일
+      settings:
+        id: NAVER.Whale
+        source: winget
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: kakao-kakaotalk
+      directives:
+        description: 카카오톡
+      settings:
+        id: Kakao.KakaoTalk
+        source: winget
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: bandisoft-bandizip
+      directives:
+        description: 반디집
+      settings:
+        id: Bandisoft.Bandizip
+        source: winget
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: neelabo-neeview
+      directives:
+        description: NeeView 이미지 뷰어
+        securityContext: elevated  # 시스템 전체 설치(MSI)
+      settings:
+        id: neelabo.NeeView
+        source: winget
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: voidtools-everything
+      directives:
+        description: Everything 파일 검색
+        securityContext: elevated  # 시스템 전체 설치
+      settings:
+        id: voidtools.Everything
+        source: winget

@@ -23,3 +23,42 @@ jobs:
             ./bootstrap.sh ci
             ./.macos
           fi
+
+  # WSL(Ubuntu) 설치 스크립트 — 러너에 미리 깔린 도구를 피하려고 깨끗한 컨테이너에서 실행
+  # Windows 연동 단계는 WSL이 아니므로 자동 스킵
+  test-wsl:
+    runs-on: ubuntu-24.04
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v5
+        with:
+          persist-credentials: false
+      - name: ShellCheck
+        run: shellcheck -x -s bash wsl/install.sh wsl/.bashrc wsl/test-in-container.sh
+      - name: Install in clean Ubuntu 24.04
+        run: |
+          docker run --rm -v "$PWD:/home/dev/.dotfiles:ro" ubuntu:24.04 \
+            bash /home/dev/.dotfiles/wsl/test-in-container.sh ci
+
+  # Windows PowerShell 5.1로 apps.ps1 파싱/실행 (ci 프로파일은 설치 없이 종료)
+  test-windows:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v5
+        with:
+          persist-credentials: false
+      - name: PSScriptAnalyzer
+        shell: pwsh
+        run: |
+          Install-Module PSScriptAnalyzer -Scope CurrentUser -Force
+          $r = Invoke-ScriptAnalyzer -Path windows/apps.ps1 -Severity Warning,Error
+          $r | Format-Table -AutoSize
+          if ($r) { exit 1 }
+      - name: Run with Windows PowerShell 5.1 (ci)
+        shell: powershell
+        run: |
+          powershell -NoProfile -ExecutionPolicy Bypass -File windows/apps.ps1 ci
+          if ($LASTEXITCODE -ne 0) { exit 1 }

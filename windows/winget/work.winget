@@ -1,0 +1,77 @@
+# yaml-language-server: $schema=https://aka.ms/configuration-dsc-schema/0.2
+# 업무/개발용 앱 (Brewfiles/Brewfile.work 대응) — windows/apps.ps1이 프로파일에 따라 적용
+# Claude Code, Codex는 코드가 있는 WSL에 설치 (wsl/install.sh)
+properties:
+  configurationVersion: 0.2.0
+  resources:
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: microsoft-visualstudiocode
+      directives:
+        description: Visual Studio Code (WSL 확장으로 사용)
+      settings:
+        id: Microsoft.VisualStudioCode
+        source: winget
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: zedindustries-zed
+      directives:
+        description: Zed
+      settings:
+        id: ZedIndustries.Zed
+        source: winget
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: jetbrains-intellijidea
+      directives:
+        description: IntelliJ IDEA
+      settings:
+        id: JetBrains.IntelliJIDEA
+        source: winget
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: jetbrains-datagrip
+      directives:
+        description: DataGrip
+      settings:
+        id: JetBrains.DataGrip
+        source: winget
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: docker-dockerdesktop
+      directives:
+        description: Docker Desktop (WSL 2 백엔드, 첫 실행 시 약관 동의)
+        securityContext: elevated
+      settings:
+        id: Docker.DockerDesktop
+        source: winget
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: bruno-bruno
+      directives:
+        description: Bruno
+      settings:
+        id: Bruno.Bruno
+        source: winget
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: figma-figma
+      directives:
+        description: Figma
+      settings:
+        id: Figma.Figma
+        source: winget
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: notion-notion
+      directives:
+        description: Notion
+      settings:
+        id: Notion.Notion
+        source: winget
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: slacktechnologies-slack
+      directives:
+        description: Slack
+      settings:
+        id: SlackTechnologies.Slack
+        source: winget
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: stablyai-orca
+      directives:
+        description: Orca
+      settings:
+        id: StablyAI.Orca
+        source: winget

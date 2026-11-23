@@ -1,0 +1,9 @@
+[include]
+    path = ~/.dotfiles/.config/git/.gitconfig
+
+# WSL 프로젝트 경로 (ext4는 대소문자 구분)
+[includeIf "gitdir:~/dev/work/"]
+    path = ~/.dotfiles/.config/git/.gitconfig.work
+
+[core]
+    fsmonitor = false  # apt 버전 git의 Linux fsmonitor 지원이 불확실해 끔
